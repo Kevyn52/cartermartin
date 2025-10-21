@@ -257,7 +257,7 @@
             margin-right: 0.5rem;
         }
 
-        /* Media Section */
+       /* Media Section */
         .media-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -270,6 +270,9 @@
             overflow: hidden;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
 
         .video-card:hover {
@@ -285,6 +288,11 @@
             justify-content: center;
             font-size: 3rem;
             color: white;
+            transition: background 0.3s ease;
+        }
+
+        .video-card:hover .video-placeholder {
+            background: linear-gradient(135deg, #c4bfb4 0%, #a8a093 100%);
         }
 
         .video-info {
@@ -553,7 +561,7 @@
         <div class="about-content">
             <div class="about-image"><img src="carter.jpg" alt="Carter Martin"></div>
             <div class="about-text">
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.</p>
+                <p>Lorem ipsum dolor sit amet consectetipiur adscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.</p>
             </div>
@@ -597,30 +605,30 @@
     </section>
 
     <section id="media">
-        <h2 class="section-title">Media</h2>
-        <div class="media-grid">
-            <div class="video-card">
-                <div class="video-placeholder">▶</div>
-                <div class="video-info">
-                    <h3>Every Valley</h3>
-                    <p>Performance at the Vienna State Opera, 2024</p>
-                </div>
+    <h2 class="section-title">Media</h2>
+    <div class="media-grid">
+        <a href="https://youtu.be/37n9fBsl-HY?si=H0TaFbzOZbsnuU2j" target="_blank" class="video-card">
+            <div class="video-placeholder">▶</div>
+            <div class="video-info">
+                <h3>Thank you to Carolyn Gwyer and Happy Retirement!</h3>
+                <p>Performance at the Vienna State Opera, 2024</p>
             </div>
-            <div class="video-card">
-                <div class="video-placeholder">▶</div>
-                <div class="video-info">
-                    <h3>Orford Audition Recording</h3>
-                    <p>Live recording from Royal Albert Hall, 2023</p>
-                </div>
+        </a>
+        <a href="https://youtu.be/vjf0I6Gls40?si=Xq_rT2aoOIYilJq3" target="_blank" class="video-card">
+            <div class="video-placeholder">▶</div>
+            <div class="video-info">
+                <h3>Orford Audition Recording</h3>
+                <p>Live recording from Royal Albert Hall, 2023</p>
             </div>
-            <div class="video-card">
-                <div class="video-placeholder">▶</div>
-                <div class="video-info">
-                    <h3>Das Wandern</h3>
-                    <p>Carnegie Hall debut, 2024</p>
-                </div>
+        </a>
+        <a href="https://youtu.be/L3df79pqmww?si=g1jHbGX8VwGX9mdI" target="_blank" class="video-card">
+            <div class="video-placeholder">▶</div>
+            <div class="video-info">
+                <h3>Being Alive by Stephen Sondheim</h3>
+                <p>Carnegie Hall debut, 2024</p>
             </div>
-        </div>
+        </a>
+    </div>
     </section>
 
     <section id="contact">
